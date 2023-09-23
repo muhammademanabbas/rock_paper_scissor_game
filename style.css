@@ -1,0 +1,104 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: sans-serif;
+    }
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+        color: white;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        padding-inline: 20px;
+        display: flex;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user_display{
+        color: lightseagreen;
+    }
+    .computer_display{
+        color: lightseagreen;
+        
+    }
+    #computer_turn  {
+        display: none;
+    }
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head h1 {
+        margin-top: 20px;
+        color: crimson;
+    }
+    .button button  {
+        width: 100px;
+        height: 40px;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    #result{
+        color: rgb(249, 134, 52);
+    }
+
+    button:active{
+        scale: 0.5;
+    }
+    .left .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    @media (max-width: 500px) {
+        .button{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .computer_display{
+        margin-bottom: 209px;
+        font-size: 25px;
+    }
+    .user_display{
+        font-size: 25px;
+    }
+    #result {
+        position: absolute;
+        font-size: 20px;
+        bottom: 15%;
+        left: 20%;
+        overflow: auto;
+    }
+    .left{
+        overflow-x: auto;
+    }
+    #computer_turn{
+        display: block;
+        position: absolute;
+        font-size: 18px;
+        right: 10%;
+        bottom: 35%;
+    }
+} 
